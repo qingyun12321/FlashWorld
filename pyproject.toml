@@ -1,0 +1,39 @@
+[project]
+name = "flashworld"
+version = "0.1.0"
+description = "Local development environment definition for FlashWorld managed with uv."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate==1.10.1",
+    "av==15.1.0",
+    "einops==0.8.1",
+    "ftfy==6.3.1",
+    "gradio==5.49.1",
+    "gsplat",
+    "moviepy==1.0.3",
+    "nanobind==2.9.2",
+    "numpy==2.2.6",
+    "omegaconf==2.3.0",
+    "opencv-python==4.12.0.88",
+    "plyfile==1.1.2",
+    "spz",
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    "transformers==4.57.0",
+    "triton==3.2.0",
+    "uvicorn==0.37.9",
+    "diffusers",
+]
+
+[tool.uv.sources]
+diffusers = { git = "https://github.com/huggingface/diffusers.git", rev = "447e8322f76efea55d4769cd67c372edbf0715b8" }
+gsplat = { git = "https://github.com/nerfstudio-project/gsplat.git", rev = "32f2a54d21c7ecb135320bb02b136b7407ae5712" }
+spz = { git = "https://github.com/nianticlabs/spz.git", rev = "a4fc69e7948c7152e807e6501d73ddc9c149ce37" }
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
