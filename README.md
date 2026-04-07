@@ -52,7 +52,7 @@ Please refer to the `requirements.txt` file for the exact package versions.
 - install ```gsplat@1.5.2```, ```diffusers@wan-5Bi2v``` and ```spz``` packages
 ```
 pip install git+https://github.com/nerfstudio-project/gsplat.git@32f2a54d21c7ecb135320bb02b136b7407ae5712
-pip install git+https://github.com/huggingface/diffusers.git@447e8322f76efea55d4769cd67c372edbf0715b8
+pip install git+https://github.com/huggingface/diffusers.git@5512d70f7fd89f69511d9c23f1473a49f7901bee
 pip install git+https://github.com/nianticlabs/spz.git@a4fc69e7948c7152e807e6501d73ddc9c149ce37
 ```
 
@@ -185,4 +185,3 @@ If you have any questions, please contact me via [imlixinyang@gmail.com](mailto:
 ## Acknowledgements
 
 This work is done with [Hunyuan-World Team](https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0).
-

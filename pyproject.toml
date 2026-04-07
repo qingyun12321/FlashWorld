@@ -3,7 +3,7 @@ name = "flashworld"
 version = "0.1.0"
 description = "Local development environment definition for FlashWorld managed with uv."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.12"
 dependencies = [
     "accelerate==1.10.1",
     "av==15.1.0",
@@ -22,12 +22,12 @@ dependencies = [
     "torchvision==0.21.0",
     "transformers==4.57.0",
     "triton==3.2.0",
-    "uvicorn==0.37.9",
+    "uvicorn==0.37.0",
     "diffusers",
 ]
 
 [tool.uv.sources]
-diffusers = { git = "https://github.com/huggingface/diffusers.git", rev = "447e8322f76efea55d4769cd67c372edbf0715b8" }
+diffusers = { git = "https://github.com/huggingface/diffusers.git", rev = "5512d70f7fd89f69511d9c23f1473a49f7901bee" }
 gsplat = { git = "https://github.com/nerfstudio-project/gsplat.git", rev = "32f2a54d21c7ecb135320bb02b136b7407ae5712" }
 spz = { git = "https://github.com/nianticlabs/spz.git", rev = "a4fc69e7948c7152e807e6501d73ddc9c149ce37" }
 torch = { index = "pytorch-cu124" }
